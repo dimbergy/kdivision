@@ -1,0 +1,16 @@
+[15-Feb-2018 22:03:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/knowl/public_html/wp-content/themes/knowl_v41/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/knowl/public_html/wp-content/themes/knowl_v41/index.php on line 1
+[15-Feb-2018 22:03:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/knowl/public_html/wp-content/themes/knowl_v41/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/knowl/public_html/wp-content/themes/knowl_v41/index.php on line 1
+[07-Apr-2018 13:16:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/knowl/public_html/wp-content/themes/knowl_v41/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/knowl/public_html/wp-content/themes/knowl_v41/404.php on line 1
+[07-Apr-2018 13:16:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/knowl/public_html/wp-content/themes/knowl_v41/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/knowl/public_html/wp-content/themes/knowl_v41/404.php on line 1
