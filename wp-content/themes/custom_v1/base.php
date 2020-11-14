@@ -14,34 +14,13 @@ use Roots\Sage\Wrapper;
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
       </div>
     <![endif]-->
-
-	 <?php
-
-     $args = array(
-         'posts_per_page'         => 1,
-         'post_type'              => array( 'cycles' ),
-         'post_status'            => array( 'publish' ),
-         'order' 	               => 'DESC',
-     );
-
-     // The Query
-     $query = new WP_Query( $args );
-     $query->the_post();
-     $expDate = get_field('exp_date');
-
-
-	 date_default_timezone_set('Europe/Athens') ;
-	  $date_now = date('Y-m-d H:i:s');
-//	  $date_exp = date('2018-11-11 23:59:59');
-     $date_exp = $expDate;
-	  ?>
-
-
     <?php
       do_action('get_header');
       get_template_part('templates/header');
     ?>
     <div class="wrap container" role="document">
+        <div class="black_line"></div>
+        <div class="white_line"></div>
       <div class="content row">
         <main class="main">
           <?php include Wrapper\template_path(); ?>

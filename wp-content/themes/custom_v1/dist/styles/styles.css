@@ -16859,6 +16859,9 @@ body#tinymce {
     height: auto;
     object-fit: contain;
 }
+#home .img_btm {
+    margin-top: -0.04rem;
+}
 
 #home .hovered_div:hover {
     cursor: pointer;
@@ -16994,6 +16997,34 @@ main {
     bottom: 0;
     width: 100%;
     padding-bottom: 20px;
+}
+
+.black_line,
+.white_line {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 262px;
+    bottom: 0;
+    margin: auto;
+    transition: all .6s;
+    z-index: 2;
+}
+.black_line {
+    left: -100%;
+    background-color: #000;
+}
+.white_line {
+    left: -200%;
+    background-color: #ffffff;
+}
+
+.wrap.active .black_line {
+    left: 100%;
+}
+
+.wrap.active .white_line {
+    left: 0;
 }
 
 @media (max-width: 1199px) {
