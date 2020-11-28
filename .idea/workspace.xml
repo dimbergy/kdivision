@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2da9c8cc-ed65-422e-9782-f076ca351a9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/assets/fonts/Anton-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/assets/fonts/Anton-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/assets/fonts/PFDasGroteskMonoPro-Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/assets/fonts/PFDasGroteskMonoPro-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/dist/fonts/Anton-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/dist/fonts/Anton-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/dist/fonts/PFDasGroteskMonoPro-Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/dist/fonts/PFDasGroteskMonoPro-Light.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_v1/base.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_v1/dist/scripts/main_custom-114a98d326.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/dist/scripts/main_custom-114a98d326.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_v1/dist/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/dist/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_v1/template-home.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/template-home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_v1/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_v1/templates/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,38 +41,46 @@
     <session id="-1220573451">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.61" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.90" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="2" />
+          <entry key="css" value="4" />
           <entry key="jpg" value="1" />
-          <entry key="php" value="8" />
+          <entry key="js" value="5" />
+          <entry key="json" value="1" />
+          <entry key="php" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
+          <entry key="CSS" value="4" />
           <entry key="Image" value="1" />
-          <entry key="PHP" value="8" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="5" />
+          <entry key="PHP" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="245" />
-          <entry key="php" value="43" />
+          <entry key="css" value="623" />
+          <entry key="js" value="188" />
+          <entry key="php" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="245" />
-          <entry key="PHP" value="43" />
+          <entry key="CSS" value="623" />
+          <entry key="JavaScript" value="188" />
+          <entry key="PHP" value="77" />
         </counts>
       </usages-collector>
     </session>
@@ -72,6 +91,16 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>#home</find>
+      <find>ligh</find>
+      <find>font</find>
+      <find>font-f</find>
+      <find>avertastdbold</find>
+      <find>@font</find>
+      <find>@font-fa</find>
+      <find>h1</find>
+      <find>body</find>
+      <find>body {</find>
+      <find>.post_label</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -82,7 +111,10 @@
       <list>
         <option value="$PROJECT_DIR$/wp-content/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/custom_v1/base.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/custom_v1/dist/scripts/main_custom-114a98d326.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/custom_v1/template-home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/custom_v1/dist/styles/styles.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/custom_v1/templates/header.php" />
       </list>
     </option>
   </component>
@@ -134,16 +166,7 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="custom_v1" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="k-division" type="b2602c69:ProjectViewProjectNode" />
-              <item name="k-division" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="custom_v1" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="k-division" type="b2602c69:ProjectViewProjectNode" />
@@ -171,6 +194,12 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/custom_v1/assets/fonts" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/custom_v1/dist/fonts" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -197,16 +226,18 @@
       <workItem from="1604828843911" duration="261000" />
       <workItem from="1604846442361" duration="1129000" />
       <workItem from="1605376123101" duration="3003000" />
+      <workItem from="1605427114566" duration="4987000" />
+      <workItem from="1606544514008" duration="3129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6606000" />
+    <option name="totallyTimeSpent" value="14722000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="985" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25772098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2630458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -218,7 +249,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.3281075" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.32698768" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -246,9 +277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/template-home.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/base-template-front.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -261,17 +289,69 @@
         <state relative-caret-position="-20699" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/dist/styles/styles.css">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/dist/scripts/main-6703834d50.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/dist/scripts/lightcase.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/404.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/template-home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="17003" column="16" lean-forward="true" selection-start-line="17003" selection-start-column="16" selection-end-line="17003" selection-end-column="16" />
+        <state relative-caret-position="480">
+          <caret line="34" column="76" selection-start-line="34" selection-start-column="76" selection-end-line="34" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="285">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-631" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/lib/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-909" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/lib/wrapper.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/lib/assets.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/lib/customizer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/dist/assets.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/dist/scripts/main_custom-114a98d326.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1860">
+          <caret line="124" column="57" selection-start-line="124" selection-start-column="57" selection-end-line="124" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/dist/styles/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1289">
+          <caret line="16951" column="19" lean-forward="true" selection-start-line="16951" selection-start-column="19" selection-end-line="16951" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/custom_v1/templates/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
         </state>
       </provider>
     </entry>

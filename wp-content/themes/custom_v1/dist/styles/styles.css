@@ -5662,7 +5662,7 @@ h6 {
     margin-bottom: .5rem;
     font-family: inherit;
     font-weight: 500;
-    line-height: 1.1;
+    line-height: normal;
     color: inherit
 }
 
@@ -14358,6 +14358,22 @@ a.text-dark:hover {
     font-style: normal
 }
 
+@font-face {
+    font-family: Anton;
+    src: url(../fonts/Anton-Regular.ttf);
+    src: url(../fonts/Anton-Regular.woff) format("woff"), url(../fonts/Anton-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Grotesk;
+    src: url(../fonts/PFDasGroteskMonoPro-Light.otf);
+    src: url(../fonts/PFDasGroteskMonoPro-Light.woff) format("woff"), url(../fonts/PFDasGroteskMonoPro-Light.otf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
 [data-icon]:before {
     content: attr(data-icon);
     padding-right: .3rem
@@ -14473,8 +14489,8 @@ html {
 
 body {
     background: #fff;
-    font: 400 14px/1.8 cfastystd-book-webfont, sans-serif;
-    color: #111;
+    font: 400 17px/1.8 Grotesk, sans-serif;
+    color: #000;
     -webkit-font-smoothing: antialiased
 }
 
@@ -15157,10 +15173,9 @@ a:hover {
 }
 
 h1 {
-    font-family: avertastdbold, sans-serif;
+    font-family: Anton, sans-serif;
     font-size: 7.5rem;
-    letter-spacing: .04rem;
-    color: #d5d8dc
+    color: #000000;
 }
 
 h1,
@@ -15331,7 +15346,6 @@ blockquote {
 @media (max-width:1200px) {
     h1 {
         font-size: 5.85rem;
-        letter-spacing: .14rem
     }
     h2 {
         font-size: 4.65rem;
@@ -15347,7 +15361,6 @@ blockquote {
 @media (max-width:992px) {
     h1 {
         font-size: 5.8rem;
-        letter-spacing: .18rem
     }
     h2 {
         font-size: 4.8rem;
@@ -15367,7 +15380,6 @@ blockquote {
 @media (max-width:768px) {
     h1 {
         font-size: 4.45rem;
-        letter-spacing: .18rem
     }
     h2 {
         font-size: 3.8rem;
@@ -15387,7 +15399,6 @@ blockquote {
 @media (max-width:575px) {
     h1 {
         font-size: 3.5rem;
-        letter-spacing: .04rem
     }
     h2 {
         font-size: 2.65rem;
@@ -16854,29 +16865,27 @@ body#tinymce {
 
 #home .img_top,
 #home .img_btm {
-    transition: all 0.5s;
+    transition: all 0.6s;
     width: 720px;
     height: auto;
     object-fit: contain;
+    display: none;
 }
 #home .img_btm {
     margin-top: -0.04rem;
 }
 
-#home .hovered_div:hover {
-    cursor: pointer;
+#home .hovered_div.active .img_top {
+    margin-left: -200%;
 }
 
-#home .hovered_div:hover .img_top{
-    margin-left: -10px;
+#home .hovered_div.active .img_btm {
+    margin-left: 200%;
 }
 
-#home .hovered_div:hover .img_btm{
-    margin-left: 15px;
-}
 #philosophy .tags {
-    font-family: avertastdbold, sans-serif;
-    font-size: 2.4rem;
+    font-family: Anton, sans-serif;
+    font-size: 2.8rem;
     letter-spacing: -.04rem;
     line-height: normal;
 }
@@ -16902,9 +16911,9 @@ body#tinymce {
 
 
 .overlay_effect .card-title {
-    font-family: avertastdbold, sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: -.04rem;
+    font-family: Anton, sans-serif;
+    font-size: 1.8rem;
+    /*letter-spacing: -.04rem;*/
     line-height: normal;
     text-align: center;
     transition: color 0.5s ease-in-out; /* vendorless fallback */
@@ -16944,15 +16953,14 @@ body#tinymce {
 }
 
 .post_title {
-    font-size: 3rem;
-    letter-spacing: -2px;
+    font-size: 4.5rem;
+    line-height: 1;
 }
 
 .post_label {
-    font-family: avertastdbold, sans-serif;
+    font-family: Anton, sans-serif;
     font-size: 1.2rem;
-    letter-spacing: -.05rem;
-    line-height: normal;
+    line-height: 1;
 }
 
 .post_value {
@@ -17001,26 +17009,26 @@ main {
 
 .black_line,
 .white_line {
-    width: 100%;
+    width: 200%;
     height: 5px;
     position: absolute;
-    top: 262px;
+    top: 68px;
     bottom: 0;
     margin: auto;
-    transition: all .6s;
+    transition: all .9s;
     z-index: 2;
 }
 .black_line {
-    left: -100%;
+    left: -400%;
     background-color: #000;
 }
 .white_line {
-    left: -200%;
+    left: -500%;
     background-color: #ffffff;
 }
 
 .wrap.active .black_line {
-    left: 100%;
+    left: 200%;
 }
 
 .wrap.active .white_line {

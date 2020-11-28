@@ -5,7 +5,7 @@
                 <img class="logo" src='<?php echo esc_url( get_theme_mod( 'themeslug_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
          </a>
          <button class="navbar-toggler" type="button">
-             <img src="http://<?= $_SERVER['SERVER_NAME'] ?>/wp-content/uploads/2020/10/toggler.png" alt="toggler-icon" class="toggle-icon">
+             <img src="http://<?= $_SERVER['SERVER_NAME'] ?>/wp-content/uploads/2020/11/toggler-e1606601478987.png" alt="toggler-icon" class="toggle-icon">
          </button>
          <div id="navbarNavDropdown" class="navbar navbar-sidebar">
              <div class="container d-flex flex-column justify-content-center align-items-end navbar-sidebar-container">

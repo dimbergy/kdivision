@@ -107,6 +107,29 @@
                         });
                     })(d),
                     o(d, u),
+                    $("#app").on('click', '.navbar-toggler', function () {
+                        $('#navbarNavDropdown').toggleClass('active');
+                    });
+                    $('a[data-rel^=lightcase]').lightcase(),
+                    lightcase.resize({ width: 1200 }),
+                    $('.grid').isotope({
+                        itemSelector: '.grid-item',
+                        layoutMode: 'fitRows'
+                    });
+                    $('.filter_nav').on( 'click', '.nav-link', function() {
+                        var filterValue = $(this).attr('data-filter');
+                        $('.grid').isotope({ filter: filterValue });
+                    });
+                    if($('body').hasClass('home')){
+                        $('#home .img_top').fadeIn(2500);
+                        $('#home .img_btm').fadeIn(2500);
+                        setTimeout(function () {
+                            $('.wrap').addClass('active');
+                            setTimeout(function () {
+                                $('.hovered_div').addClass('active');
+                            }, 1500);
+                        }, 5000);
+                    }
                     $(window).resize(function () {
                         var t = Math.max($(window).width(), window.innerWidth);
                         e(i), o(t, u);
@@ -276,19 +299,6 @@
                                     1 == e.sendstatus ? (o.html(e.message), t.fadeOut(500)) : o.html(e.message);
                                 },
                             });
-                        }),
-                        $("#app").on('click', '.navbar-toggler', function () {
-                            $('#navbarNavDropdown').toggleClass('active');
-                        }),
-                        $('a[data-rel^=lightcase]').lightcase(),
-                        lightcase.resize({ width: 1200 }),
-                        $('.grid').isotope({
-                            itemSelector: '.grid-item',
-                            layoutMode: 'fitRows'
-                        }),
-                        $('.filter_nav').on( 'click', '.nav-link', function() {
-                            var filterValue = $(this).attr('data-filter');
-                            $('.grid').isotope({ filter: filterValue });
                         }),
                     0 != $("#map").length && "undefined" != typeof google)
                 ) {
