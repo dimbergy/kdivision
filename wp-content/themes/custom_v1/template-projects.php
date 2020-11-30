@@ -38,10 +38,10 @@ if ( $query->have_posts() ) {
 ?>
 
 <section id="<?= $page_data['post_class'] ?>">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <?php if(count($page_data['categories'])) { ?>
-                <div class="col-12 col-md-6 d-flex align-self-center">
+                <div class="col-12 col-md-6 d-flex align-self-end">
                     <ul class="nav filter_nav">
                         <?php foreach ($page_data['categories'] as $category) { ?>
                             <li class="nav-item">
@@ -59,8 +59,7 @@ if ( $query->have_posts() ) {
 
 
 
-        <div class="row grid mt-4">
-
+        <div class="grid mt-3">
             <?php if(count($page_data['projects'])) {
                 foreach ($page_data['projects'] as $project) {
                     $categories = [];

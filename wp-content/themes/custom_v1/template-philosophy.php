@@ -22,20 +22,20 @@ edit_post_link();
 ?>
 
 <section id="<?= $page_data['post_class'] ?>">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <h1 class="text-right"><?= $page_data['title'] ?></h1>
             </div>
             <?php if (has_post_thumbnail()) { ?>
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-lg-5">
                     <a href="<?= $page_data['image_src'] ?>" class="showcase" data-lc-options='{"maxWidth":1600, "maxHeight":800}' data-rel="lightcase" data-lc-caption="<?= $page_data['image_title'] ?>">
-                        <img src="<?= $page_data['image_src'] ?>" alt="<?= $page_data['image_title'] ?>" class="w-100">
+                        <img src="<?= $page_data['image_src'] ?>" alt="<?= $page_data['image_title'] ?>" class="w-100 philosophy-cover">
                     </a>
                 </div>
 
             <?php } ?>
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-lg-7 content mt-4 mt-lg-0">
                 <?= $page_data['content'] ?>
             </div><div class="col-12 mt-4">
                 <h5 class="label"><?= $page_data['keywords_label'] ?></h5>

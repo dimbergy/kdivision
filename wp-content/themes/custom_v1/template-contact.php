@@ -12,21 +12,26 @@ edit_post_link(); ?>
 
 
 <section id="<?= $page_data['post_class'] ?>">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <h1 class="text-right"><?= $page_data['title'] ?></h1>
             </div>
 
            <div class="col-12 col-md-4 text-right contact-details">
-               <?= $page_data['content'] ?>
+               <div class="content">
+                   <?= $page_data['content'] ?>
+               </div>
+
 
                <?php get_template_part('templates/unit', 'social'); ?>
 
            </div>
 
-            <div class="col-12 col-md-8">
-                <?= $page_data['map'] ?>
+            <div class="col-12 col-md-8 mt-4 mt-md-0">
+<!--                --><?//= $page_data['map'] ?>
+
+                <img src="http://kdivision.dimitriosvergados.eu/wp-content/uploads/2020/11/map-scaled.jpg" alt="map" class="map">
             </div>
         </div>
     </div>

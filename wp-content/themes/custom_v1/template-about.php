@@ -23,6 +23,7 @@ if ( $query->have_posts() ) {
         if (has_post_thumbnail()) {
             $page_data['team'][$counter]['src'] = get_the_post_thumbnail_url();
             $page_data['team'][$counter]['title'] = get_the_post_thumbnail_caption();
+            $page_data['team'][$counter]['profession'] = get_the_excerpt();
             $counter++;
         }
     }
@@ -31,11 +32,12 @@ if ( $query->have_posts() ) {
 ?>
 
     <section id="<?= $page_data['post_class'] ?>">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <h1 class="text-right"><?= $page_data['title'] ?></h1>
                 </div>
+
                 <?php if(count($page_data['team'])) {
                     foreach ($page_data['team'] as $member) { ?>
                         <div class="col-12 col-sm-6 col-md-4 p-0 overlay_effect overlay_center">
@@ -44,6 +46,7 @@ if ( $query->have_posts() ) {
                                 <div class="card-img-overlay">
                                     <div class="card-body">
                                         <h5 class="card-title"><?= $member['title'] ?></h5>
+                                        <p class="card-subtitle text-center mt-4"><?= $member['profession'] ?></p>
                                     </div>
                                 </div>
                             </a>
@@ -51,7 +54,7 @@ if ( $query->have_posts() ) {
                         </div>
                     <?php  }
                 } ?>
-                <div class="col-12 mt-2">
+                <div class="col-12 mt-2 content">
                     <?= $page_data['content'] ?>
                 </div>
             </div>
