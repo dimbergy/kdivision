@@ -17021,6 +17021,11 @@ body#tinymce {
     text-align: justify;
 }
 
+.post_content,
+.post_content p {
+    line-height: 1.4;
+}
+
 :root {
     --tile-height: calc((100vh - 290px)/2);
     --tile-width: calc((100vh - 290px)/2 + (100vh - 290px)/2 * 15/100);
@@ -17047,6 +17052,11 @@ body#tinymce {
 #projects .grid-item {
     flex-basis: var(--tile-width);
     max-width: var(--tile-width);
+}
+
+#projects .grid-item.double_width {
+    flex-basis: var(--tile-width-x2);
+    max-width: var(--tile-width-x2);
 }
 
 #gallery .overlay_effect {
@@ -17166,6 +17176,7 @@ body#tinymce {
     font-size: 1.1rem;
     font-weight: 100;
     letter-spacing: -.05rem;
+    line-height: 1.6;
 }
 
 .contact-details {
@@ -17181,7 +17192,7 @@ main {
 }
 
 .carousel .carousel-image {
-    height: calc(100vh - 200px);
+    height: calc(100vh - 176px);
     object-fit: cover;
 }
 
@@ -17296,7 +17307,16 @@ main {
 }
 
 @media (max-width: 1400px) {
-     .grid {
+
+
+    :root {
+        --tile-height: calc((100vh - 278px)/2);
+        --tile-width: calc((100vh - 278px)/2 + (100vh - 278px)/2 * 15/100);
+        --tile-width-x2: calc(((100vh - 278px)/2 + (100vh - 278px)/2 * 15/100) * 2);
+    }
+
+
+    .grid {
         width: calc(var(--tile-width) * 3);
     }
 
@@ -17324,17 +17344,11 @@ main {
         height: 230px;
     }
 
-    :root {
-        --tile-height: calc((100vh - 278px)/2);
-        --tile-width: calc((100vh - 278px)/2 + (100vh - 290px)/2 * 15/100);
-        --tile-width-x2: calc(((100vh - 278px)/2 + (100vh - 290px)/2 * 15/100) * 2);
-    }
-
     @media (max-height: 700px) {
         :root {
             --tile-height: calc((100vh - 278px));
-            --tile-width: calc((100vh - 278px) + (100vh - 290px) * 15/100);
-            --tile-width-x2: calc(((100vh - 278px) + (100vh - 290px) * 15/100) * 2);
+            --tile-width: calc((100vh - 278px) + (100vh - 278px) * 15/100);
+            --tile-width-x2: calc(((100vh - 278px) + (100vh - 278px) * 15/100) * 2);
         }
 
          .grid {
@@ -17352,8 +17366,8 @@ main {
     @media (max-height: 700px) {
         :root {
             --tile-height: calc((100vh - 278px));
-            --tile-width: calc((100vh - 278px) + (100vh - 290px) * 15/100);
-            --tile-width-x2: calc(((100vh - 278px) + (100vh - 290px) * 15/100) * 2);
+            --tile-width: calc((100vh - 278px) + (100vh - 278px) * 15/100);
+            --tile-width-x2: calc(((100vh - 278px) + (100vh - 278px) * 15/100) * 2);
         }
 
          .grid {
@@ -17430,8 +17444,8 @@ main {
 
     :root {
         --tile-height: calc((100vh - 242px)/2);
-        --tile-width: calc((100vh - 242px)/2 + (100vh - 290px)/2 * 15/100);
-        --tile-width-x2: calc(((100vh - 242px)/2 + (100vh - 290px)/2 * 15/100) * 2);
+        --tile-width: calc((100vh - 242px)/2 + (100vh - 242px)/2 * 15/100);
+        --tile-width-x2: calc(((100vh - 242px)/2 + (100vh - 242px)/2 * 15/100) * 2);
         --g-tile-height: calc((100vh - 198px)/2);
         --g-tile-width: calc((100vh - 198px)/2 + (100vh - 198px)/2 * 15/100);
         --member-height: calc((100vh - 330px)/2);
@@ -17440,8 +17454,8 @@ main {
     @media (max-height: 700px) {
         :root {
             --tile-height: calc((100vh - 278px));
-            --tile-width: calc((100vh - 278px) + (100vh - 290px) * 15/100);
-            --tile-width-x2: calc(((100vh - 278px) + (100vh - 290px) * 15/100) * 2);
+            --tile-width: calc((100vh - 278px) + (100vh - 278px) * 15/100);
+            --tile-width-x2: calc(((100vh - 278px) + (100vh - 278px) * 15/100) * 2);
             --g-tile-height: calc(100vh - 198px);
             --g-tile-width: calc((100vh - 198px) + (100vh - 198px) * 15/100);
         }

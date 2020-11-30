@@ -10,14 +10,8 @@
 
           $post_data = [
               'subtitle' => get_field('subtitle'),
-              'location_label' => get_field('location')['label'],
-              'location' => get_field('location')['value'],
-              'status_label' => get_field('status')['label'],
-              'status' => get_field('status')['value'],
-              'date' => get_field('date')['value'],
-              'details' => get_field('details'),
+              'staff' => get_field('staff'),
               'images' => get_images_from_acf_gallery('gallery')
-
           ];
 
            if ( has_post_thumbnail() ) {
@@ -33,7 +27,7 @@
           $images = array_reverse($post_data['images']); ?>
 
 
-          <header class="mt-5 pt-5">
+          <header>
               <div class="mt-4">
                   <?php if(count($images)) { ?>
                   <div id="postCarousel" class="carousel slide" data-ride="carousel">
@@ -46,7 +40,7 @@
                           <?php foreach ($images as $key => $image) { ?>
                           <div class="carousel-item<?= $key==0 ? ' active' : '' ?>">
                               <a href="<?= $image['src'] ?>" class="showcase" data-lc-options='{"maxWidth":1600, "maxHeight":800}' data-rel="lightcase:slideshow" data-lc-caption="<?= $image['title'] ?>">
-                              <img class="d-block w-100 carousel-image" src="<?= $image['src'] ?>" alt="<?= $image['alt'] ?>" title="<?= $image['tit;e'] ?>">
+                              <img class="d-block w-100 carousel-image" src="<?= $image['src'] ?>" alt="<?= $image['alt'] ?>" title="<?= $image['title'] ?>">
                               </a>
                           </div>
                           <?php } ?>
@@ -55,49 +49,50 @@
                   <?php } ?>
               </div>
           </header>
-          <div class="container mt-5">
+          <div class="container-fluid mt-5">
               <div class="row">
-                 <div class="col-12 col-md-5">
-                     <?php $subtitle_secondary = $post_data['location'];
-                     if(!empty($post_data['date'])) {
-                         $subtitle_secondary .= ', ' . $post_data['date'];
-                     }
-                     ?>
-                     <div class="card-subtitle"><?= $post_data['subtitle'] ? $post_data['subtitle'] : $subtitle_secondary ?></div>
+                 <div class="col-12 col-md-5 col-lg-4">
                      <h1 class="post_title"><?php the_title() ?></h1>
+                     <div class="card-subtitle text-left mt-3"><?= $post_data['subtitle'] ?></div>
 
                      <div class="mt-5">
-                         <?php if(!empty($post_data['location'])) { ?>
-                         <div>
-                             <span class="post_label"><?= $post_data['location_label'] ?></span>
-                             <span class="pl-2 post_value"><?= $post_data['location'] ?></span>
-                         </div>
-                         <?php } ?>
-                         <?php if(!empty($post_data['status'])) { ?>
-                             <div>
-                                 <span class="post_label"><?= $post_data['status_label'] ?></span>
-                                 <span class="pl-2 post_value"><?= $post_data['status'] ?></span>
-                             </div>
-                         <?php } ?>
-                         <?php if(count($post_data['details'])) { ?>
-                             <div class="my-4">
-                             <?php foreach ($post_data['details'] as $detail) { ?>
-                                 <div>
-                                     <span class="post_label"><?= $detail['label'] ?></span>
-                                     <span class="pl-2 post_value"><?= $detail['value'] ?></span>
+                         <?php if(count($post_data['staff']) < 4) {
+                             foreach ($post_data['staff'] as $item) { ?>
+                                 <div class="mb-4">
+                                     <p class="post_label text-left mb-2"><?= $item['profession'] ?></p>
+                                     <?php if(count($item['people'])) {
+                                         foreach ($item['people'] as $person) { ?>
+                                             <p class="post_value text-left mb-0"><?= $person['name'] ?></p>
+                                         <?php }
+                                     } ?>
                                  </div>
-                             <?php } ?>
-                             </div>
-                         <?php }?>
+                             <?php    }
+                          } ?>
                      </div>
 
                  </div>
-                  <div class="col-12 col-md-7">
-                      <?php the_content() ?>
+                  <div class="col-12 col-md-7 col-lg-8 content">
+                      <div class="post_content">
+                          <?php the_content() ?>
+                      </div>
                   </div>
               </div>
-          </div>
 
+              <?php if(count($post_data['staff']) > 3) { ?>
+              <div class="row justify-content-between mt-4">
+                  <?php foreach ($post_data['staff'] as $item) { ?>
+                  <div class="col-auto mb-4">
+                      <p class="post_label text-center mb-2"><?= $item['profession'] ?></p>
+                      <?php if(count($item['people'])) {
+                          foreach ($item['people'] as $person) { ?>
+                              <p class="post_value text-center mb-0"><?= $person['name'] ?></p>
+                          <?php }
+                      } ?>
+                  </div>
+                  <?php } ?>
+              </div>
+              <?php } ?>
+          </div>
 
       <?php } ?>
 
