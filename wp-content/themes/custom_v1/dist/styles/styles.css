@@ -17024,6 +17024,7 @@ body#tinymce {
 :root {
     --tile-height: calc((100vh - 290px)/2);
     --tile-width: calc((100vh - 290px)/2 + (100vh - 290px)/2 * 15/100);
+    --tile-width-x2: calc(((100vh - 290px)/2 + (100vh - 290px)/2 * 15/100) * 2);
     --member-height: calc(100vh - 400px);
 }
 
@@ -17034,7 +17035,8 @@ body#tinymce {
 @media (max-height: 700px) {
     :root {
         --tile-height: calc((100vh - 290px));
-        --tile-width: calc((100vh - 290px) + (100vh - 290px) * 15/100) ;
+        --tile-width: calc((100vh - 290px) + (100vh - 290px) * 15/100);
+        --tile-width-x2: calc(((100vh - 290px) + (100vh - 290px) * 15/100) * 2);
     }
 
      .grid {
@@ -17282,7 +17284,8 @@ main {
     @media (max-height: 700px) {
         :root {
             --tile-height: calc((100vh - 290px));
-            --tile-width: calc((100vh - 290px) + (100vh - 290px) * 15/100) ;
+            --tile-width: calc((100vh - 290px) + (100vh - 290px) * 15/100);
+            --tile-width-x2: calc(((100vh - 290px) + (100vh - 290px) * 15/100) * 2);
         }
 
          .grid {
@@ -17300,7 +17303,8 @@ main {
     @media (max-height: 700px) {
         :root {
             --tile-height: calc((100vh - 290px));
-            --tile-width: calc((100vh - 290px) + (100vh - 290px) * 15/100) ;
+            --tile-width: calc((100vh - 290px) + (100vh - 290px) * 15/100);
+            --tile-width-x2: calc(((100vh - 290px) + (100vh - 290px) * 15/100) * 2);
         }
 
         .grid {
@@ -17322,13 +17326,15 @@ main {
 
     :root {
         --tile-height: calc((100vh - 278px)/2);
-        --tile-width: calc((100vh - 278px)/2 + (100vh - 290px)/2 * 15/100) ;
+        --tile-width: calc((100vh - 278px)/2 + (100vh - 290px)/2 * 15/100);
+        --tile-width-x2: calc(((100vh - 278px)/2 + (100vh - 290px)/2 * 15/100) * 2);
     }
 
     @media (max-height: 700px) {
         :root {
             --tile-height: calc((100vh - 278px));
-            --tile-width: calc((100vh - 278px) + (100vh - 290px) * 15/100) ;
+            --tile-width: calc((100vh - 278px) + (100vh - 290px) * 15/100);
+            --tile-width-x2: calc(((100vh - 278px) + (100vh - 290px) * 15/100) * 2);
         }
 
          .grid {
@@ -17346,7 +17352,8 @@ main {
     @media (max-height: 700px) {
         :root {
             --tile-height: calc((100vh - 278px));
-            --tile-width: calc((100vh - 278px) + (100vh - 290px) * 15/100) ;
+            --tile-width: calc((100vh - 278px) + (100vh - 290px) * 15/100);
+            --tile-width-x2: calc(((100vh - 278px) + (100vh - 290px) * 15/100) * 2);
         }
 
          .grid {
@@ -17404,6 +17411,19 @@ main {
     .navbar-section .white_bg {
         display: none;
     }
+
+    .white_line {
+        bottom: 36px;
+    }
+
+
+    #home .hovered_div.active .img_top {
+        margin-left: -38px;
+    }
+
+    #home .hovered_div.active .img_btm {
+        margin-left: 38px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -17411,6 +17431,7 @@ main {
     :root {
         --tile-height: calc((100vh - 242px)/2);
         --tile-width: calc((100vh - 242px)/2 + (100vh - 290px)/2 * 15/100);
+        --tile-width-x2: calc(((100vh - 242px)/2 + (100vh - 290px)/2 * 15/100) * 2);
         --g-tile-height: calc((100vh - 198px)/2);
         --g-tile-width: calc((100vh - 198px)/2 + (100vh - 198px)/2 * 15/100);
         --member-height: calc((100vh - 330px)/2);
@@ -17420,7 +17441,8 @@ main {
         :root {
             --tile-height: calc((100vh - 278px));
             --tile-width: calc((100vh - 278px) + (100vh - 290px) * 15/100);
-            --g-tile-height: calc((100vh - 198px));
+            --tile-width-x2: calc(((100vh - 278px) + (100vh - 290px) * 15/100) * 2);
+            --g-tile-height: calc(100vh - 198px);
             --g-tile-width: calc((100vh - 198px) + (100vh - 198px) * 15/100);
         }
     }
@@ -17465,6 +17487,20 @@ main {
     #contact .map,
     #contact .contact-details {
         height: auto;
+    }
+
+    .white_line {
+        bottom: 24px;
+        height: 3px;
+    }
+
+
+    #home .hovered_div.active .img_top {
+        margin-left: -27px;
+    }
+
+    #home .hovered_div.active .img_btm {
+        margin-left: 27px;
     }
 }
 
@@ -17530,6 +17566,18 @@ main {
     .card .card-img-top {
         width: 280px;
         height: 280px;
+    }
+
+    .white_line {
+        bottom: 18px;
+    }
+
+    #home .hovered_div.active .img_top {
+        margin-left: -18px;
+    }
+
+    #home .hovered_div.active .img_btm {
+        margin-left: 18px;
     }
 }
 
