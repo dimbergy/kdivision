@@ -153,11 +153,11 @@ function category_and_tag_archives( $wp_query ) {
 }
 
 // Register Custom Post Type
-function gallery() {
+function general() {
 
-    $name = 'Gallery';
-    $singular_name = 'Media';
-    $slug = 'services';
+    $name = 'General';
+    $singular_name = 'General';
+    $slug = 'general';
 
     $labels = array(
         'name'                  => __( $name, 'Post Type General Name', theme() ),
@@ -218,7 +218,7 @@ function gallery() {
     register_post_type( $name , $args );
 
 }
-add_action( 'init', 'gallery', 0 );
+add_action( 'init', 'general', 0 );
 
 
 // Register Custom Post Type
