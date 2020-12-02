@@ -16300,12 +16300,12 @@ blockquote {
 
 #contact .map {
     width: 100%;
-    height: calc(100vh - 300px);
+    height: 550px;
     object-fit: cover;
 }
 
 #contact .contact-details {
-    height: calc(100vh - 300px);
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17064,8 +17064,8 @@ body#tinymce {
 #philosophy .tags {
     font-family: Anton, sans-serif;
     font-size: 2.8rem;
-    /*letter-spacing: -.04rem;*/
-    line-height: normal;
+    line-height: 1.4;
+    text-align: left;
 }
 .showcase .card-img {
     height: 330px;
@@ -17225,9 +17225,20 @@ main {
     margin-bottom: 3rem;
 }
 
-.carousel .carousel-image {
+.single-projects .carousel-image {
     height: calc(100vh - 176px);
+    min-height: 500px;
     object-fit: cover;
+}
+
+.single-projects .post-image {
+    height: auto;
+    object-fit: cover;
+}
+
+.single-projects .carousel-image,
+.single-projects .post-image:hover {
+    cursor: pointer;
 }
 
 .home .carousel .carousel-image {
@@ -17462,6 +17473,10 @@ main {
         width: 400px;
     }
 
+    #philosophy .tags {
+        font-size: 1.8rem;
+    }
+
     .logo {
         height: 80px;
         object-fit: contain;
@@ -17546,6 +17561,11 @@ main {
     #home .img_full {
         width: 280px;
     }
+
+    #philosophy .tags {
+        font-size: 1.5rem;
+    }
+
     .card,
     .showcase .card-img,
     .card .card-img-top {

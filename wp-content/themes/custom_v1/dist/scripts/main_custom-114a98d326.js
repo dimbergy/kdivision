@@ -131,6 +131,18 @@
                         var filterValue = $(this).attr('data-filter');
                         $('.grid').isotope({ filter: filterValue });
                     });
+                    $(".single-projects")
+                        .on('click', '.post-image-section', function() {
+                            let _this = $(this),
+                                next = _this.next().attr('id');
+                    $('html, body').animate({
+                        scrollTop: $('#' + next).offset().top - 152
+                    }, 1000);
+                        }).on('click', '.carousel-image', function () {
+                        $('html, body').animate({
+                            scrollTop: $('#post_content').offset().top - 180
+                        }, 1000);
+                    });
                     if($('body').hasClass('home')){
                         $('body.home').addClass('fixed_bg');
                         setTimeout(function () {

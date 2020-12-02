@@ -37,7 +37,7 @@ edit_post_link();
             <?php } ?>
             <div class="col-12 col-lg-7 content mt-4 mt-lg-0">
                 <?= $page_data['content'] ?>
-            </div><div class="col-12 mt-4">
+            </div><div class="col-12 mt-5">
                 <h5 class="label"><?= $page_data['keywords_label'] ?></h5>
                 <p class="tags"><?= implode(' / ', $tags) ?></p>
             </div>
