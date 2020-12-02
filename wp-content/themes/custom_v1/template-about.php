@@ -40,7 +40,7 @@ if ( $query->have_posts() ) {
 
                 <?php if(count($page_data['team'])) {
                     foreach ($page_data['team'] as $member) { ?>
-                        <div class="col-12 col-sm-6 col-md-4 p-0 overlay_effect overlay_center">
+                        <div class="col-12 col-sm-6 col-lg-4 p-0 overlay_effect overlay_center">
                             <a href="<?= $member['src'] ?>" class="showcase" data-lc-options='{"maxWidth":1600, "maxHeight":800}' data-rel="lightcase:slideshow" data-lc-caption="<?= $member['title'] ?>">
                                 <img src="<?= $member['src'] ?>" alt="<?= $member['title'] ?>" class="card-img mb-2">
                                 <div class="card-img-overlay">

@@ -71,7 +71,7 @@ usort($page_data['projects'], "cmp");
 
 
 
-        <div class="grid mt-3">
+        <div class="grid mt-3 row">
             <?php if(count($page_data['projects'])) {
                 foreach ($page_data['projects'] as $project) {
                     $categories = [];
@@ -82,7 +82,7 @@ usort($page_data['projects'], "cmp");
                     }
                     $filters = implode(' ', $categories); ?>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-0 grid-item<?= $project['columns']==2 ? ' double_width' : '' ?> <?= $filters ?>">
+                        <div class="col-12 p-0 grid-item <?= $project['columns']==2 ? 'col-sm-12 col-md-8 col-xl-6' : 'col-sm-6 col-md-4 col-xl-3' ?> <?= $filters ?>">
                             <a href="<?= $project['permalink']?>" class="perma_link">
                             <div class="card overlay_effect">
                                 <img src="<?= $project['image_src'] ?>" alt="<?= $project['image_title'] ?>" class="card-img-top">
