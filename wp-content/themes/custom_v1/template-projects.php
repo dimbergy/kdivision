@@ -23,7 +23,8 @@ if ( $query->have_posts() ) {
     while ( $query->have_posts() ) {
         $query->the_post();
         if (has_post_thumbnail()) {
-            $page_data['projects'][$counter]['image_src'] = get_the_post_thumbnail_url();
+
+            $page_data['projects'][$counter]['image_src'] = get_the_post_thumbnail_url( get_the_ID(), 'medium_large', NULL );
             $page_data['projects'][$counter]['image_title'] = get_the_post_thumbnail_caption();
             $page_data['projects'][$counter]['permalink'] = get_the_permalink();
             $page_data['projects'][$counter]['columns'] = get_field('columns');

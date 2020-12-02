@@ -48,7 +48,6 @@ edit_post_link();
                                 <div class="carousel-inner">
                                     <?php foreach ($page_data['banners'] as $key => $image) { ?>
                                         <div class="carousel-item<?= $key==0 ? ' active' : '' ?>">
-                                            <a href="<?= $image['src'] ?>" class="showcase" data-lc-options='{"maxWidth":1600, "maxHeight":800}' data-rel="lightcase:slideshow" data-lc-caption="<?= $image['title'] ?>">
                                                 <img class="d-block w-100 carousel-image" src="<?= $image['src'] ?>" alt="<?= $image['alt'] ?>" title="<?= $image['tit;e'] ?>">
                                             </a>
                                         </div>

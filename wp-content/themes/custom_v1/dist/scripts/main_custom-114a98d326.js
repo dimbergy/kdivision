@@ -118,7 +118,7 @@
                     })(d),
                     o(d, u),
                     $("#app").on('click', '.navbar-toggler', function () {
-                        $('#navbarNavDropdown').toggleClass('active');
+                        $('#navbarNavDropdown, body').toggleClass('active');
                         $(this).toggleClass('rotated');
                     });
                     $('a[data-rel^=lightcase]').lightcase(),
