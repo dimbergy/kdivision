@@ -42,7 +42,6 @@ if ( $query->have_posts() ) {
                 <?php if(count($page_data['team'])) {
                     foreach ($page_data['team'] as $member) { ?>
                         <div class="col-12 col-sm-6 col-lg-4 p-0 overlay_effect overlay_center">
-                            <a href="<?= $member['large'] ?>" class="showcase" data-lc-options='{"maxWidth":1600, "maxHeight":800}' data-rel="lightcase:slideshow" data-lc-caption="<?= $member['title'] ?>">
                                 <img src="<?= $member['medium'] ?>" alt="<?= $member['title'] ?>" class="card-img mb-2">
                                 <div class="card-img-overlay">
                                     <div class="card-body">
@@ -50,7 +49,6 @@ if ( $query->have_posts() ) {
                                         <p class="card-subtitle text-center mt-4"><?= $member['profession'] ?></p>
                                     </div>
                                 </div>
-                            </a>
                             <?= edit_post_link(); ?>
                         </div>
                     <?php  }

@@ -168,12 +168,12 @@
                     }
                     $('.navbar-section .nav-item .dropdown-toggle').on('mouseenter', function () {
                         let _this = $(this);
-                        $('.navbar-section .nav-item').removeClass('hovered');
+                        $('.navbar-section .nav-item').removeClass('hovered no_transition');
                         _this.closest('.nav-item').addClass('hovered');
 
                     });
                     $('.navbar-section .nav-item .dropdown-item').on('mouseleave', function () {
-                        $(this).closest('.nav-item').removeClass('hovered');
+                        $(this).closest('.nav-item').removeClass('hovered').addClass('no_transition');
                         // $('.navbar-section .nav-item:first-child').removeClass('hovered');
                     });
                     $(window).resize(function () {

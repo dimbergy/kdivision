@@ -391,7 +391,11 @@ function getPage($template) {
     ];
 
     if (has_post_thumbnail()) {
-        $page_data['image_src'] = get_the_post_thumbnail_url();
+        $page_data['image_thumb'] = get_the_post_thumbnail_url( get_the_ID(), 'thumbnail', NULL );
+        $page_data['image_medium'] = get_the_post_thumbnail_url( get_the_ID(), 'medium', NULL );
+        $page_data['image_medium_large'] = get_the_post_thumbnail_url( get_the_ID(), 'medium_large', NULL );
+        $page_data['image_large'] = get_the_post_thumbnail_url( get_the_ID(), 'large', NULL );
+        $page_data['image_full'] = get_the_post_thumbnail_url( get_the_ID(), 'full', NULL );
         $page_data['image_title'] = get_the_post_thumbnail_caption();
     }
 

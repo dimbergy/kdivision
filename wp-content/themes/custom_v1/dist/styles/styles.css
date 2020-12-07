@@ -5913,8 +5913,8 @@ pre code {
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
     width: 100%
 }
 
@@ -9194,6 +9194,8 @@ tbody.collapse.show {
     -ms-flex-pack: justify;
     justify-content: space-between;
     background: #ffffff;
+    padding-left: 43px;
+    padding-right: 43px;
 }
 
 .navbar>.container {
@@ -9344,6 +9346,15 @@ tbody.collapse.show {
     top: 0;
 }
 
+
+
+.navbar-section .navbar-nav .menu-item-has-children.nav-item.dropdown.no_transition .dropdown-toggle {
+    transition: none;
+}
+.navbar-section .navbar-nav .menu-item-has-children.nav-item.dropdown.no_transition .dropdown-menu {
+    transition: none;
+}
+
 .navbar-toggler {
     padding: .25rem .75rem;
     font-size: 1.25rem;
@@ -9383,6 +9394,17 @@ tbody.collapse.show {
     .navbar-expand-sm>.container-fluid {
         padding-right: 0;
         padding-left: 0
+    }
+    .navbar,
+    .navbar>.container,
+    .navbar>.container-fluid {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .container-fluid {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
 
@@ -16455,6 +16477,7 @@ blockquote {
     object-fit: contain;
     cursor: pointer;
     padding-right: 0;
+    text-align: right;
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -16854,8 +16877,8 @@ blockquote {
     position: relative;
     width: 100%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
+    padding-right: 0;
+    padding-left: 0;
 }
 
 @media (min-width:576px) {
@@ -16986,7 +17009,6 @@ body#tinymce {
 .menu-item-has-children.nav-item.dropdown .dropdown-toggle {
     transition: all 1s;
 }
-
 .menu-item-has-children.nav-item.dropdown.open .dropdown-toggle {
    opacity: 0;
 }
@@ -17097,6 +17119,10 @@ body#tinymce {
     line-height: 1.4;
 }
 
+.toggle-icon {
+    width: 85%;
+}
+
 :root {
     --tile-height: calc((100vw /4) - 2rem);
     --member-height: calc((100vw / 3) - 2rem);
@@ -17181,18 +17207,25 @@ body#tinymce {
     transition: all 0.6s;
     opacity: 0;
 }
+.overlay_effect .card-img {
+    transition: all 0.6s;
+}
 
 .overlay_effect.overlay_center .card-img-overlay {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+#about .overlay_effect:hover .card-img-overlay,
 .showcase:hover .card-img-overlay,
 .perma_link:hover .card-img-overlay {
     opacity: 1;
 }
+#about .overlay_effect:hover {
+    cursor: pointer;
+}
 
+#about .overlay_effect:hover .card-img,
 .showcase:hover .card-img,
 .perma_link:hover .card-img-top {
     opacity: 0;
@@ -17374,7 +17407,20 @@ main {
     margin: 0 auto;
 }
 
+@media (max-width: 1599px) {
 
+    .container-fluid {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .navbar,
+    .navbar>.container,
+    .navbar>.container-fluid {
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+}
 
 
 @media (max-width: 1199px) {
