@@ -18,7 +18,7 @@
           ?>
 
           <header>
-              <div class="mt-4">
+              <div class="container-fluid mt-4">
                   <?php if(count($post_data['thumb'])) { ?>
                       <img src="<?= $post_data['thumb']['src'] ?>" alt="<?= $post_data['thumb']['alt'] ?>" title="<?= $post_data['thumb']['title'] ?>" class="w-100 carousel-image">
                   <?php } ?>
