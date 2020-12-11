@@ -9340,10 +9340,15 @@ tbody.collapse.show {
     pointer-events: none;
 }
 
+/*.navbar-section .navbar-nav .menu-item > .dropdown-menu {*/
+/*pointer-events: none;*/
+/*}*/
+
 .navbar-section .navbar-nav .menu-item.hovered > .dropdown-menu {
     /*margin-top: -120px;*/
     opacity: 1;
     visibility: visible;
+    pointer-events: all;
 }
 
 .navbar-section .navbar-nav .menu-item.hovered > .dropdown-menu .dropdown-item {
@@ -17412,21 +17417,6 @@ main {
 .grid {
     display: block;
     margin: 0 auto;
-}
-
-@media (max-width: 1599px) {
-
-    .container-fluid {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .navbar,
-    .navbar>.container,
-    .navbar>.container-fluid {
-        padding-left: 33px;
-        padding-right: 33px;
-    }
 }
 
 

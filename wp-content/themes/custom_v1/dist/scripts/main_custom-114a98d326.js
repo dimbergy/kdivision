@@ -166,21 +166,49 @@
                     }, 2000);
                 }, 3000);
             }
+
             $('.navbar-section')
                 .on('mouseenter', '.nav-item', function () {
                     let _this = $(this);
-                    $('.navbar-section .nav-item').removeClass('hovered no_transition').css('pointer-events', 'none');
-                    _this.addClass('hovered').css('pointer-events', 'all');
-                    $('.navbar-section .nav-item:first-child').css('pointer-events', 'all');
+                    if($(window).width() > 991) {
+                        $('.navbar-section .nav-item').removeClass('hovered no_transition').css('pointer-events', 'none');
+                        _this.addClass('hovered').css('pointer-events', 'all');
+                        $('.navbar-section .nav-item:first-child').css('pointer-events', 'all');
+                    }
+
                 }).on('mouseleave', '.nav-item', function(){
-                $('.navbar-section .nav-item').css('pointer-events', 'all');
-                let _this = $(this).css('pointer-events', 'none');
-                _this.removeClass('hovered').addClass('no_transition');
-                $('.navbar-section .nav-item:first-child').css('pointer-events', 'all');
+                let _this = $(this);
+                if($(window).width() > 991) {
+                    $('.navbar-section .nav-item').css('pointer-events', 'all');
+                    _this.css('pointer-events', 'none');
+                    _this.removeClass('hovered').addClass('no_transition');
+                    $('.navbar-section .nav-item:first-child').css('pointer-events', 'all');
+                }
             });
+
             $(window).resize(function () {
                 var t = Math.max($(window).width(), window.innerWidth);
                 e(i), o(t, u);
+
+                $('.navbar-section')
+                    .on('mouseenter', '.nav-item', function () {
+                        let _this = $(this);
+                        if($(window).width() > 991) {
+                            $('.navbar-section .nav-item').removeClass('hovered no_transition').css('pointer-events', 'none');
+                            _this.addClass('hovered').css('pointer-events', 'all');
+                            $('.navbar-section .nav-item:first-child').css('pointer-events', 'all');
+                        }
+
+                    }).on('mouseleave', '.nav-item', function(){
+                    let _this = $(this);
+                    if($(window).width() > 991) {
+                        $('.navbar-section .nav-item').css('pointer-events', 'all');
+                        _this.css('pointer-events', 'none');
+                        _this.removeClass('hovered').addClass('no_transition');
+                        $('.navbar-section .nav-item:first-child').css('pointer-events', 'all');
+                    }
+                });
+
             }),
                 $(window).scroll(function () {
                     t(i, this), a(r, i, s);
